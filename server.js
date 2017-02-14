@@ -70,6 +70,10 @@ app.get('/bad', function(req, res){
   });
 });
 
+app.get('/projects', function(req, res){
+  res.render('projects', {message: 'Projects go here...'});
+});
+
 app.listen(port, function(){
   console.log(`Starting my Express app on port ${port}...`);
 });
