@@ -71,7 +71,9 @@ app.get('/bad', function(req, res){
 });
 
 app.get('/projects', function(req, res){
-  res.render('projects', {message: 'Projects go here...'});
+  res.render('projects', {
+    pageTitle: 'Projects'
+  });
 });
 
 app.listen(port, function(){
